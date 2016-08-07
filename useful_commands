@@ -1,0 +1,5 @@
+audio-recorder -c start; audio-recorder -c hide; sleep 20; audio-recorder -c stop;
+mpg123 -w test.wav test.mp3
+mp3splt 0.4 0.5 test.mp3
+mp3info test.mp3
+ls -tp ~/Audio | grep -v /$ | head -1 
