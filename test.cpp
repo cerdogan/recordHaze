@@ -13,6 +13,7 @@ int main(int argc, char* argv[]) {
 	}
 	char f1 [256];
 	sprintf(f1, "%s.wav", argv[1]);
+	printf("Opening '%s.wav'\n", argv[1]); 
 
 	// Open the WAV file. 
 	SF_INFO info;
